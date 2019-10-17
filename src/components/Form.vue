@@ -228,11 +228,13 @@ export default {
         .btn-submit {
           background-color: #262626;
           color: #ffffff;
-          padding: 5px 90px;
+          padding: 20px 30px;
+          min-height: 84px;
+          min-width: 280px;
           border: 0;
           font-size: 11px;
           letter-spacing: 2px;
-          line-height: 72px;
+          line-height: 32px;
           text-transform: uppercase;
           font-weight: bold;
           text-align: center;

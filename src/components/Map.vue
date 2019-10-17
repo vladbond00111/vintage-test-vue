@@ -127,6 +127,12 @@ export default {
           &:hover {
             color: #3db565;
           }
+          &:last-child {
+            margin-right: 0;
+          }
+          @media(max-width: 400px) {
+            margin-right: 10px;
+          }
         }
         .active {
           color: #3db565;
