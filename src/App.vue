@@ -1,28 +1,69 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Contacts/>
+    <Map/>
+    <Form/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Contacts from './components/Contacts.vue'
+import Map from './components/Map.vue'
+import Form from './components/Form.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Contacts,
+    Map,
+    Form
+  },
+  methods: {
+      init() {
+        alert('1111')
+      }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+$dark: #333333;
+$green: #3db565;
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  background-image: url(/images/pattern.png);
+  font-family: "Suisse Intl", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: $dark;
+  h1 {
+    font-size: 50px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .block-container{
+    padding: 60px 60px 100px 60px;
+    @media(max-width: 800px) {
+      padding: 20px;
+    }
+    .green-color{
+      color: $green;
+      text-transform: uppercase;
+      a {
+        color: $green;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 </style>
