@@ -178,6 +178,7 @@ export default {
           background: none;
           font-size: 18px;
           line-height: 50px;
+          color: #000000;
         }
       }
       .checkbox-wrap {
@@ -208,6 +209,7 @@ export default {
           color: #000000;
         }
         label {
+          color: #000000;
           font-size: 18px;
           line-height: 16px;
         }
